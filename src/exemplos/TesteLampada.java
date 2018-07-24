@@ -12,11 +12,7 @@ public class TesteLampada {
 		Lampada lamp1 = new Lampada();
 		lamp1.setPotencia(20);
 		lamp1.setFabricante(fab);
-		lamp1.acender();		
-		
-		//lamp1.acender();
-		
-		//lamp1.setPotencia(60);		
+		lamp1.acender();					
 		
 		System.out.println(lamp1);
 	}

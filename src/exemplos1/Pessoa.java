@@ -1,9 +1,9 @@
 package exemplos1;
 
-public class Pessoa {
+public abstract class Pessoa {
 	
 	private String nome;
-	private int idade;
+	protected int idade;
 	private float altura;
 	private float peso;
 	
@@ -25,14 +25,14 @@ public class Pessoa {
 	}
 	public void setNome(String nome) {
 		if (nome.length() < 4)
-		   this.nome = nome;
+		   this.nome = nome.toUpperCase();
 	}
 	public int getIdade() {
 		return idade;
 	}
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
+	
+	public abstract void setIdade(int idade); // Obriga a refazer este método no objetos herdado desta class
+	
 	public float getAltura() {
 		return altura;
 	}

@@ -22,6 +22,15 @@ public class Cliente extends Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+
+	@Override
+	public void setIdade(int idade) {
+		// TODO Auto-generated method stub
+		if (idade > 0) {
+			super.idade = idade;
+		}
+		
+	}
 	
 	
 

@@ -28,10 +28,23 @@ public class Cliente extends Pessoa {
 		// TODO Auto-generated method stub
 		if (idade > 0) {
 			super.idade = idade;
-		}
-		
+		}		
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+//		Cliente cliente1 = (Cliente) obj;
+//		if (cliente1.getCpf().equals(this.cpf)) {
+//			return true;
+//		}
+//			return false;
+//		OU		
+//  	return cliente1.getCpf().equals(this.cpf);
+//		OU
+		return cliente1.getCpf().equals(((Cliente) obj) this.cpf);		
+			
+
+	}
 	
 
 }
